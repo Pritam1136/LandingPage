@@ -1,0 +1,93 @@
+/* styles.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #3498db;
+}
+
+.header {
+  margin-bottom: 100px;
+  color: white;
+  font-weight: 700;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.social-icons {
+  margin-top: 25px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 10px;
+  margin: 15px;
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+}
+
+/* Adjust the icon size for different screen sizes */
+@media screen and (max-width: 480px) {
+  .social-icons a {
+    font-size: 20px;
+  }
+}
+
+.quote-section {
+  background-color: #3498db;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff5f5;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+}
+
+.quote::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 5px;
+  animation: blink-caret 0.7s infinite;
+}
